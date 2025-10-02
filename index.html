@@ -515,56 +515,30 @@ const DATA = [
   "id": 25,
   "title": "問25. グラフについて、まちがっている組み合わせを1つ選びなさい",
   "options": [
-    { 
-      "label": "a", 
-      "htmlText": "<div style='display:flex; align-items:center; gap:10px;'>
-                     <span>ヒストグラム</span>
-                     <img src='2020_2_2.png' alt='ヒストグラム' style='max-width:120px; height:auto;'>
-                   </div>", 
-      "correct": false 
-    },
-    { 
-      "label": "b", 
-      "htmlText": "<div style='display:flex; align-items:center; gap:10px;'>
-                     <span>帯グラフ</span>
-                     <img src='2020_2_3.png' alt='帯グラフ' style='max-width:120px; height:auto;'>
-                   </div>", 
-      "correct": false 
-    },
-    { 
-      "label": "c", 
-      "htmlText": "<div style='display:flex; align-items:center; gap:10px;'>
-                     <span>散布図</span>
-                     <img src='2020_2_4.png' alt='散布図' style='max-width:120px; height:auto;'>
-                   </div>", 
-      "correct": false 
-    },
-    { 
-      "label": "d", 
-      "htmlText": "<div style='display:flex; align-items:center; gap:10px;'>
-                     <span>クロス集計表</span>
-                     <img src='2020_2_5.png' alt='クロス集計表' style='max-width:120px; height:auto;'>
-                   </div>", 
-      "correct": true 
-    },
-    { 
-      "label": "e", 
-      "htmlText": "<div style='display:flex; align-items:center; gap:10px;'>
-                     <span>クモの巣グラフ</span>
-                     <img src='2020_2_6.png' alt='クモの巣グラフ' style='max-width:120px; height:auto;'>
-                   </div>", 
-      "correct": false 
-    }
+    { "label": "a", "text": "ヒストグラム", "correct": false },
+    { "label": "b", "text": "帯グラフ", "correct": false },
+    { "label": "c", "text": "散布図", "correct": false },
+    { "label": "d", "text": "クロス集計表", "correct": true },
+    { "label": "e", "text": "クモの巣グラフ", "correct": false }
   ],
   "explanation_html": `
-✅ 正解：d「クロス集計表」<br>
+✅ 正解：d「クロス集計表」<br><br>
+
+<div style="display:flex; gap:10px; flex-wrap:nowrap;">
+  <img src="2020_2_2.png" alt="ヒストグラム" style="max-width:120px; height:auto;">
+  <img src="2020_2_3.png" alt="帯グラフ" style="max-width:120px; height:auto;">
+  <img src="2020_2_4.png" alt="散布図" style="max-width:120px; height:auto;">
+  <img src="2020_2_5.png" alt="クロス集計表" style="max-width:120px; height:auto;">
+  <img src="2020_2_6.png" alt="クモの巣グラフ" style="max-width:120px; height:auto;">
+</div>
+
 (a) ○　7-1-2　Ⅲ427<br>
 (b) ○　7-1-2　Ⅲ421<br>
 (c) ○　7-1-2　Ⅲ427-428<br>
-(d) ×　6-6-1, 6-11　Ⅲ382-383, 411　クロス集計表 → 度数分布表（Ⅲ354）<br>
-(e) ○　7-1-2　Ⅲ426`
-}
-,
+(d) ×　6-6-1, 6-11　Ⅲ382-383, 411　クロス集計表 → 度数分布表（Ⅲ354）。クロス集計表は2変数の集計表、度数分布表は各階級ごとの度数を表にしたもの。<br>
+(e) ○　7-1-2　Ⅲ426
+`
+},
  {
   "id": 26,
   "title": "問26. グラフについて、正しいものを1つ選びなさい",
@@ -1291,6 +1265,7 @@ render();
 </script>
 </body>
 </html>
+
 
 
 
