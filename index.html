@@ -1157,16 +1157,6 @@ W00-X59については、章の最初に表示されている発生場所コー�
 
 ];
 
-<script>
-// ======= 画像つき選択肢対応：ヘルパー =======
-function renderOptionHTML(opt, showLabel) {
-  const head = showLabel ? `${opt.label}. ` : "";
-  // もし text の代わりに HTML を直接入れたい場合は htmlText を使う
-  if (opt.htmlText) return `${head}${opt.htmlText}`;
-  const imgHTML = opt.image ? `<br><img src="${opt.image}" alt="${opt.text}" style="max-width:250px; height:auto;">` : "";
-  // text はプレーンテキスト想定
-  return `${head}${opt.text}${imgHTML}`;
-}
 
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
